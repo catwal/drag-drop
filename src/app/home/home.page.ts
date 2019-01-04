@@ -53,7 +53,7 @@ export class HomePage {
     this.dragulaService.removeModel('bag').subscribe(({ item }) => {
       item['color'] = 'success';
       this.toastCtrl
-        .create({ message: 'Removed' + item.value, duration: 2000 })
+        .create({ message: 'Removed ' + item.value, duration: 2000 })
         .then(toast => toast.present());
     });
 
